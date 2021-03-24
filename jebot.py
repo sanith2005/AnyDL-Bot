@@ -22,14 +22,14 @@ YTDL_REGEX = (r"^((?:https?:)?\/\/)"
 s2tw = OpenCC('s2tw.json').convert
 
 
-@Jebot.on_message(filters.command("start"))
-async def start(client, message):
+@Jebot.on_message(filters.command("download"))
+async def downliad(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm AnyDL Bot
+               text="""<b>Hey There, I'm Music Player & Downloader Bot®.
 
-I can download video or audio from Youtube. Made by @ImJanindu 🇱🇰
+I can download video or audio from Youtube. Made by @sanithbimsara 🤗 🇱🇰
 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
@@ -37,10 +37,10 @@ Hit help button to find out more about how to use me</b>""",
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/Infinity_BOTs")
+                                            "Channel", url="https://t.me/rpsbots")
                                     ],[
                                       InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
+                                            "Dev⌨️", url="https://t.me/sanithbimsara")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -51,20 +51,20 @@ async def help(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>AnyDL Bot Help!
+               text="Music player & Dowloader Bot""<b> Bot Help!
 
 Just send a Youtube url to download it in video or audio format!
 
-~ @Infinity_BOTs</b>""",
+~ @@MuZic_r_o_bot</b>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Back", callback_data="start"),
+                                            "Back", callback_data="download"),
                                         InlineKeyboardButton(
                                             "About", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
+                                            "Dev⌨️", url="https://t.me/sanithbimsara")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -77,19 +77,25 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b>About AnyDL Bot!</b>
 
-<b>♞ Developer:</b> <a href="https://t.me/ImJanindu">Janindu 🇱🇰</a>
+<b>◼️ Name: Music Player & Downloader Bot</b>
 
-<b>♞ Support:</b> <a href="https://t.me/InfinityBOTs_Support">Infinity BOTs Support</a>
+<b>◼️ Language : Python.</b>
 
-<b>♞ Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
+<b>◼️Server : Hroku.</b>
 
-<b>~ @Infinity_BOTs</b>""",
+<b>◼️ Developer:</b> <a href="https://t.me/sanithbimsara">sanith Binsara 🇱🇰</a>
+
+<b>◼️ Whats App :</b> <a href="https://wa.me/qr/HJVDC27JHQJ3J1">Sanith Bimsara</a>
+
+<b>◼️ Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
+
+<b>~ @rpsbots</b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "Back", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
+                                            "Dev", url="https://t.me/sanithbimsara")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -167,7 +173,7 @@ async def send_audio(message: Message, info_dict, audio_file):
         get_file_extension_from_url(thumbnail_url)
     # info (s2tw)
     webpage_url = info_dict['webpage_url']
-    title = '@Infinity_BOTs - '+s2tw(info_dict['title'])
+    title = '@MuZic_r_o_bot - '+s2tw(info_dict['title'])
     caption = f"<b><a href=\"{webpage_url}\">{title}</a></b>"
     duration = int(float(info_dict['duration']))
     performer = s2tw(info_dict['uploader'])
@@ -218,7 +224,7 @@ async def send_video(message: Message, info_dict, video_file):
         get_file_extension_from_url(thumbnail_url)
     # info (s2tw)
     webpage_url = info_dict['webpage_url']
-    title = '@Infinity_BOTs - '+s2tw(info_dict['title'])
+    title = '@MuZic_r_o_bot - '+s2tw(info_dict['title'])
     caption = f"<b><a href=\"{webpage_url}\">{title}</a></b>"
     duration = int(float(info_dict['duration']))
     width, height = get_resolution(info_dict)
@@ -269,14 +275,14 @@ async def button(bot, update):
       elif "about" in cb_data:
         await update.message.delete()
         await about(bot, update.message)
-      elif "start" in cb_data:
+      elif "download" in cb_data:
         await update.message.delete()
         await start(bot, update.message)
 
 print(
     """
 Bot Started!
-Join @Infinity_BOTs
+Join @rpsbots
 """
 )
 
