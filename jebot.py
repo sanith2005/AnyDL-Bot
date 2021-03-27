@@ -9,9 +9,9 @@ from config import Config
 
 Jebot = Client(
    "YT Downloader",
-   api_id=Config.APP_ID,
-   api_hash=Config.API_HASH,
-   bot_token=Config.TG_BOT_TOKEN,
+   api_id=Config.2409052,
+   api_hash=Config.b8c5a4066d7312639b130ddaaeafff92,
+   bot_token=Config.1788714820:AAFE_SabbETUv5njBtUSV0v3RApN4tBFdT4,
 )
 
 YTDL_REGEX = (r"^((?:https?:)?\/\/)"
