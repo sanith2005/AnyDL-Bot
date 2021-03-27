@@ -22,20 +22,20 @@ YTDL_REGEX = (r"^((?:https?:)?\/\/)"
 s2tw = OpenCC('s2tw.json').convert
 
 
-@Jebot.on_message(filters.command("start"))
-async def start(client, message):
+@Jebot.on_message(filters.command("download"))
+async def download(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm AnyDL Bot
+               text="""<b>Hey There, I'm @Muzix_robot.
 
-I can download video or audio from Youtube. Made by @ImJanindu 🇱🇰
+I can download video or audio from Youtube. Made by @sanithbimsara 🇱🇰🇱🇰
 
-Hit help button to find out more about how to use me</b>""",   
+Click "HOW TO USE" button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Help", callback_data="help"),
+                                            "howtouse", callback_data="howtouse"),
                                         InlineKeyboardButton(
                                             "Channel", url="https://t.me/Infinity_BOTs")
                                     ],[
