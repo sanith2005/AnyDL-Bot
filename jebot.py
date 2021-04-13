@@ -61,6 +61,10 @@ Send me the song name you want to download.
 
 Use this Format ```/song Alone```
 
+⚠️ Special Note,
+
+YouTube Links Are Not Allowd Groups.
+
 •Enjoy 😋
 
 *ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙᴏᴛ ♫*</b>""",
