@@ -51,7 +51,7 @@ async def help(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>AnyDL Bot Help!
+               text="""<b>ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙᴏᴛ ♫ Help!
 
 Just send a Youtube url to download it in audio format!
 
@@ -65,13 +65,13 @@ Use this Format /song faded
 
 
 *ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙᴏᴛ ♫*</b>""",
-        reply_markup=InlineKeyboardMarkup(
+        reply_markup=InlineKeyboardMarkup( 
                                 [[
                                         InlineKeyboardButton(
-                                            "Back", callback_data="start"),
+                                            "Other Projects", url="https://t.me/c/1399318170/2"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Other Projects", url="https://t.me/c/1399318170/2"),
+                                            "Back", callback_data="start"),
                                     ]]
                             ),        
             disable_web_page_preview=True,        
