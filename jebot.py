@@ -84,7 +84,7 @@ Use this Format ```/song Alone```
                    & filters.regex(YTDL_REGEX))
 async def ytdl_with_button(_, message: Message):
     await message.reply_text(
-        "**Choose download type 🤗**",
+        "**𝐇𝐢𝐭 𝐀𝐮𝐝𝐢𝐨 𝐁𝐮𝐭𝐭𝐨𝐧**",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
