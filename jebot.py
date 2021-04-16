@@ -67,6 +67,8 @@ Eg:- /song Alone
 
 YouTube Links Are Not Allowd Groups.
 
+<a href="http://telegram.me/GroupHelp">Group Guideline</a>
+
 •Enjoy 😋
 
 *ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙᴏᴛ ♫*</b>""",
