@@ -59,7 +59,9 @@ Or,
 
 Send me the song name you want to download.
 
-Use this Format ```/song Alone```
+Use this Format-"/song + song name"
+
+Eg:- /song Alone
 
 ⚠️ Special Note,
 
