@@ -68,7 +68,7 @@ Use this Format /song faded
         reply_markup=InlineKeyboardMarkup( 
                                 [[
                                         InlineKeyboardButton(
-                                            "Other Projects", url="https://t.me/c/1399318170/2"),
+                                            "Other Projects", url="https://t.me/mykdramabot/763"),
                                   ],[
                                         InlineKeyboardButton(
                                             "Back", callback_data="start"),
