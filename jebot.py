@@ -70,7 +70,7 @@ async def about(client, message):
                                             "Creator 😊 ", url="https://t.me/sanithbimsara"),
                                     ],[
                                       InlineKeyboardButton(
-                                            "Other ProJects 💾 ", url="https://t.me/c/1399318170/2"),
+                                            "Other ProJects 💾 ", url="https://t.me/mykdramabot/763"),
                                    ],[
                                         InlineKeyboardButton(
                                             "Back 🔙", callback_data="help"),
