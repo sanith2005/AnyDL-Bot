@@ -21,7 +21,7 @@ async def start(client, message):
                chat_id=message.chat.id,
                text="""<b>My K-Drama Bot Help!
 
-Hit "/start" Button to get more Information.
+Hit "/start" Button to Search Tv Series.
                
 𝐼 𝓌𝒶𝓈 𝓂𝒶𝒹𝑒 𝒷𝓎 @sanithbimsara ღ</b>""",   
                             reply_markup=InlineKeyboardMarkup(
