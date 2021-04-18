@@ -14,14 +14,6 @@ Jebot = Client(
    bot_token=Config.TG_BOT_TOKEN,
 )
 
-YTDL_REGEX = (r"^((?:https?:)?\/\/)"
-              r"?((?:www|m)\.)"
-              r"?((?:youtube\.com|youtu\.be|xvideos\.com|pornhub\.com"
-              r"|xhamster\.com|xnxx\.com))"
-              r"(\/)([-a-zA-Z0-9()@:%_\+.~#?&//=]*)([\w\-]+)(\S+)?$")
-s2tw = OpenCC('s2tw.json').convert
-
-
 @Jebot.on_message(filters.command("help"))
 async def start(client, message):
    if message.chat.type == 'private':
@@ -45,19 +37,14 @@ async def start(client, message):
 
 @Jebot.on_message(filters.command("help"))
 async def help(client, message):
-    if message.chat.type == 'private':   
+    if message.chat.type == 'update':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>My K-Drama Bot Help!</b>""",
+               text="""<b>My K-Drama Bot Was Successfully Updated ✅</b>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Back", callback_data="start"),
-                                        InlineKeyboardButton(
-                                            "About", callback_data="about"),
-                                  ],[
-                                        InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
+                                            "Back", callback_data="help"),
                                     ]]
                             ),        
             disable_web_page_preview=True,        
