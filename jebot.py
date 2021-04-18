@@ -24,52 +24,58 @@ async def start(client, message):
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "update", callback_data="update"),
+                                            "Update 🔄", callback_data="update"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/Infinity_BOTs")
+                                            "User Guid 📃", url="https://telegra.ph/My-K-Drama-Bot-User-Guid-04-18"),
                                     ],[
                                       InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
+                                            "Search Tv Series 🔎", callback_data="start")
+                                   ],[
+                                        InlineKeyboardButton(
+                                            "Request 👨‍💻", url="https://t.me/sanithbimsara"),
+                                        InlineKeyboardButton(
+                                            "more👨‍🔧", callback_data="more"),
                                     ]]
                             ),        
             disable_web_page_preview=True,        
             parse_mode="html")
 
-@Jebot.on_message(filters.command("help"))
+@Jebot.on_message(filters.command("update"))
 async def help(client, message):
-    if message.chat.type == 'update':   
+    if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
                text="""<b>My K-Drama Bot Was Successfully Updated ✅</b>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Back", callback_data="help"),
+                                            "Back 🔙", callback_data="help"),
                                     ]]
                             ),        
             disable_web_page_preview=True,        
             parse_mode="html")
 
-@Jebot.on_message(filters.command("about"))
+@Jebot.on_message(filters.command("More"))
 async def about(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>About AnyDL Bot!</b>
-
-<b>♞ Developer:</b> <a href="https://t.me/ImJanindu">Janindu 🇱🇰</a>
-
-<b>♞ Support:</b> <a href="https://t.me/InfinityBOTs_Support">Infinity BOTs Support</a>
-
-<b>♞ Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
-
-<b>~ @Infinity_BOTs</b>""",
+               text="""<b>More Optations👨‍🔧</b>""",
+           
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Back", callback_data="help"),
+                                            "Feedback 🌀", url="https://t.me/sanithbimsara"),
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
+                                            "Creator 😊 ", url="https://t.me/sanithbimsara"),
+                                    ],[
+                                      InlineKeyboardButton(
+                                            "Other ProJects 💾 ", url="https://t.me/c/1399318170/2"),
+                                   ],[
+                                        InlineKeyboardButton(
+                                            "Back 🔙", callback_data="help"),
+                                        InlineKeyboardButton(
+                                            "Main Menu 🔝", callback_data="start"),
                                     ]]
                             ),        
             disable_web_page_preview=True,        
