@@ -22,20 +22,17 @@ YTDL_REGEX = (r"^((?:https?:)?\/\/)"
 s2tw = OpenCC('s2tw.json').convert
 
 
-@Jebot.on_message(filters.command("ok"))
+@Jebot.on_message(filters.command("help"))
 async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm AnyDL Bot
-
-I can download video or audio from Youtube. Made by @ImJanindu 🇱🇰
-
-Hit help button to find out more about how to use me</b>""",   
+               text="""<b>My K-Drama Bot Help!
+𝐼 𝓌𝒶𝓈 𝓂𝒶𝒹𝑒 𝒷𝓎 @sanithbimsara ღ</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Help", callback_data="help"),
+                                            "update", callback_data="update"),
                                         InlineKeyboardButton(
                                             "Channel", url="https://t.me/Infinity_BOTs")
                                     ],[
