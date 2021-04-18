@@ -81,19 +81,6 @@ async def about(client, message):
             disable_web_page_preview=True,        
             parse_mode="html")
 
-@Jebot.on_callback_query()
-async def button(bot, update):
-      cb_data = update.data
-      if "help" in cb_data:
-        await update.message.delete()
-        await help(bot, update.message)
-      elif "more" in cb_data:
-        await update.message.delete()
-        await about(bot, update.message)
-      elif "update" in cb_data:
-        await update.message.delete()
-        await start(bot, update.message)
-
 print(
     """
 Bot Started!
