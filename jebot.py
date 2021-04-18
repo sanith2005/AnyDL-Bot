@@ -22,7 +22,7 @@ YTDL_REGEX = (r"^((?:https?:)?\/\/)"
 s2tw = OpenCC('s2tw.json').convert
 
 
-@Jebot.on_message(filters.command("start"))
+@Jebot.on_message(filters.command("ok"))
 async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
