@@ -25,17 +25,20 @@ async def start(client, message):
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Update 🔄", callback_data="update"),
-                                        InlineKeyboardButton(
                                             "User Guid 📃", url="https://telegra.ph/My-K-Drama-Bot-User-Guid-04-18"),
+                                        InlineKeyboardButton(
+                                            "Rate Us ⭐️", url="https://t.me/tlgrmcbot?start=mykdrama_bot-review"),
                                     ],[
                                       InlineKeyboardButton(
-                                            "Search Tv Series 🔎", callback_data="start")
+                                            "Creator 😊 ", url="https://t.me/sanithbimsara"),
                                    ],[
                                         InlineKeyboardButton(
                                             "Request 👨‍💻", url="https://t.me/sanithbimsara"),
                                         InlineKeyboardButton(
-                                            "more👨‍🔧", callback_data="more"),
+                                            "Feedback 🌀", url="https://t.me/sanithbimsara"),
+                                   ],[
+                                      InlineKeyboardButton(
+                                            "Other ProJects 💾 ", url="https://t.me/mykdramabot/763"),
                                     ]]
                             ),        
             disable_web_page_preview=True,        
