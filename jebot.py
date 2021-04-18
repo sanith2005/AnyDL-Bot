@@ -20,6 +20,8 @@ async def start(client, message):
        await Jebot.send_message(
                chat_id=message.chat.id,
                text="""<b>My K-Drama Bot Help!
+
+Hit "/start" Button to get more Information.
                
 𝐼 𝓌𝒶𝓈 𝓂𝒶𝒹𝑒 𝒷𝓎 @sanithbimsara ღ</b>""",   
                             reply_markup=InlineKeyboardMarkup(
