@@ -46,6 +46,13 @@ Hit help button to find out more about how to use me</b>""",
             disable_web_page_preview=True,        
             parse_mode="html")
 
+@Jebot.on_message(filters.command("help"))
+async def about(client, message):
+    if message.chat.type == 'private':   
+        await Jebot.send_message(
+               chat_id=message.chat.id,
+               text=""" """,
+
 
 @Jebot.on_callback_query()
 async def button(bot, update):
