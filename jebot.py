@@ -28,10 +28,7 @@ async def start(client, message):
        await Jebot.send_message(
                chat_id=message.chat.id,
                text="""<b>Hey There, I'm AnyDL Bot
-
-I can download video or audio from Youtube. Made by @ImJanindu 🇱🇰
-
-Hit help button to find out more about how to use me</b>""",   
+</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
