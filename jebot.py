@@ -41,6 +41,11 @@ I was made by @sanithbimsara ❤️</b>""",
                                     ],[
                                       InlineKeyboardButton(
                                             "➕ Add me to a Group ➕", url="http://t.me/song_dl_robot?startgroup=tr")
+                                    ],[
+                                      InlineKeyboardButton(
+                                            "Other Projects", url="https://t.me/otherprojects/766"),
+                                        InlineKeyboardButton(
+                                            "Share 🔁", url="https://t.me/share/url?url=Hey%20I%27m%20%40song_dl_robot%2C%0A%0A%20%20%20%20I%20can%20download%20songs%20from%0A%20%20%20%20%20%20%20%20%20%20%E2%80%A2Youtube%0A%20%20%20%20%20%20%20%20%20%20%E2%80%A2JioSaavn%20%0A%20%20%20%20%20%20%20%20%20%20%E2%80%A2Deezer%20%0A%20%20%20%20%20%20%20%20%20%20%E2%80%A2Sound%20cloud%0A%20%20%20%20%20%20%20%20%20%20%E2%80%A2Bandcamp%20%0A%20%20%20%20%20%20%20%20%20%20%E2%80%A2Yandex.Music%20%0A%0A~Bot%20Link%20-%20%40song_dl_robot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -68,7 +73,7 @@ Use this Format /song faded
         reply_markup=InlineKeyboardMarkup( 
                                 [[
                                         InlineKeyboardButton(
-                                            "Other Projects", url="https://t.me/mykdramabot/763"),
+                                            "Other Projects", url="https://t.me/otherprojects/766"),
                                   ],[
                                         InlineKeyboardButton(
                                             "Back", callback_data="start"),
